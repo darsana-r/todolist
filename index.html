@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>My Todo List</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="todo2.png" alt="Todo List Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Filter Tasks</h2>
+            <ul class="taskbars">
+                <li><button id="allTasks">▶     All Tasks</button></li>
+                <li><button id="pendingTasks">▶     Pending Tasks</button></li>
+                <li><button id="completedTasks">▶       Completed Tasks</button></li>
+                <li><button id="todayTasks">▶       Today's Tasks</button></li>
+            </ul>
+        </aside>
+        <main class="task-list">
+            <h1>My ToDo List</h1>
+            <ul id="tasks">
+                <!-- Tasks will be dynamically added here using JavaScript -->
+            </ul>
+            <input type="text" id="newTask" placeholder="Add a new task">
+            <input type="date" id="due-date" placeholder="Due date">
+            <button id="addTask">Add Task</button>
+        </main>
+    </div>
+    <script src="script.js"></script> <!-- Add your JavaScript file here -->
+</body>
+</html>
